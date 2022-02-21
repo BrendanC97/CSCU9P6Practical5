@@ -52,6 +52,7 @@ public class Controller1 extends JFrame
         window.add(view1);
         view2 = new View2(this, model);
         window.add(view2);
+
         
         // Display the frame
         setVisible(true);
@@ -66,7 +67,7 @@ public class Controller1 extends JFrame
             view2.clear();
         }
         else if (e.getSource() == incA) 
-            model.modifyA();     // The model will trigger the views to update themselves
+            model.modifyA();// The model will trigger the views to update themselves
         else if (e.getSource() == quit)
             System.exit(0);
           
